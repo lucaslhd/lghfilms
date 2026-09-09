@@ -24,7 +24,7 @@ Os testes não enviam leads, e-mails, mensagens, reservas ou pagamentos. A confi
 
 - Descoberta da marca nos resultados de busca exige indexação e consistência de perfis. Solicitar indexação do sitemap no Google Search Console e revisar os links dos perfis depende do acesso a essas contas; nenhum aumento de score ou posição foi estimado.
 - Não há API protegida, servidor MCP, autenticação delegada, cadastro de agentes ou checkout. Por isso, não se publicam metadados OAuth/OIDC, cartão de servidor MCP ou mecanismos de pagamento que anunciariam recursos inexistentes. Implementá-los exige definir uma tarefa real, autorização e operação comercial.
-- DNS-AID, descoberta de serviços de agentes pelo DNS, exige escolher um serviço efetivamente disponível e seus registros. Os registros de DNS e e-mail existentes não são alterados para simular esse suporte. O catálogo HTTP já oferece descoberta dos recursos reais.
+- DNS-AID, descoberta de serviços de agentes pelo DNS, anuncia o catálogo HTTP real através de `_index._agents.lucasgilfilms.com`. Configuração, cadeia DNSSEC e validação estão documentadas em `docs/dns-aid.md`; execute `node scripts/verify-dns-aid.mjs` para verificar o estado público.
 - Reavaliar a página de privacidade se forem adicionados formulários, analytics, pagamentos ou outros processadores.
 
 ## Kit de marca
