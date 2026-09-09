@@ -1,0 +1,21 @@
+{
+  "name": "lucas-gil-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "preview": "vite preview --host 127.0.0.1",
+    "dev": "vite",
+    "check": "node scripts/check-site.mjs",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "hls.js": "^1.6.15"
+  },
+  "devDependencies": {
+    "vite": "^8.2.2"
+  }
+}

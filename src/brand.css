@@ -1,0 +1,17 @@
+/* Change the palette and font families here. Keep contrast when choosing new colors. */
+:root {
+  --site-width: 1600px;
+  --orange: #FA6404;
+  --orange-surface: #C44700;
+  --on-orange: #FFFFFF;
+  --coral: #E2725B;
+  --rose: #D58D8D;
+  --yellow: #FFDD44;
+  --ink: #171513;
+  --paper: #F5F2ED;
+  --muted: #B5AFA7;
+  --line-dark: #ffffff30;
+  --line-light: #17151335;
+  --font-display: 'Space Grotesk', Arial, sans-serif;
+  --font-body: 'Manrope', Arial, sans-serif;
+}

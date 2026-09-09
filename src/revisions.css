@@ -1,0 +1,76 @@
+/* Editorial refinements; colors remain centralized in brand.css. */
+body{background:#0d0c0b}.site-shell{position:relative;max-width:var(--site-width);margin-inline:auto;background:var(--ink)}
+.desktop-nav,.header-contact{font-size:21px}
+.desktop-nav{gap:34px}.site-header .wordmark{font-size:32px;letter-spacing:-1.7px}
+.hero h1{font-size:clamp(96px,12.6vw,192px)}
+.contact,.menu-dialog{background:var(--orange-surface);color:var(--on-orange)}
+.contact .section-top,.contact-links,.menu-dialog nav>a{border-color:#ffffff45}
+.contact-links a:hover{border-color:currentColor}
+.contact :focus-visible,.menu-dialog :focus-visible{outline-color:#fff}
+.circle-link:hover>span,.retry-video{color:var(--on-orange);background:var(--orange-surface)}
+.social-icon{flex-shrink:0}.trajectory-link .social-icon{color:#64615e}
+.social-links{display:flex;flex-wrap:wrap;gap:22px;margin-top:28px}
+.social-links a{display:inline-flex;align-items:center;gap:9px;font-size:14px;min-height:44px}
+.social-links a:hover span{text-decoration:underline;text-underline-offset:5px}
+.contact-links{justify-content:flex-start;gap:24px 60px}
+.hero-frames{gap:10px;padding:10px}.hero-frame{border-radius:12px}
+.hero-shade{z-index:1}.hero-copy{pointer-events:none}.hero-copy a{pointer-events:auto}
+.hero-frame picture{display:block;height:100%}
+.hero-frame video{transition:opacity .22s}
+.project-visual{background:none;border-radius:0;overflow:visible;gap:12px}
+.preview-frame{position:relative;min-width:0;padding:0;overflow:hidden;border-radius:12px;background:#24211e;isolation:isolate}
+.preview-frame picture{display:block;height:100%}
+.preview-frame img,.preview-frame video{width:100%;height:100%;object-fit:cover;display:block}
+.preview-frame img{transition:filter .22s;transform:none!important}
+.preview-frame video{position:absolute;inset:0;opacity:0;transition:opacity .2s}
+.preview-frame.is-playing video{opacity:1}
+.preview-frame:hover img{filter:saturate(1)}
+.preview-badge{position:absolute;bottom:14px;left:14px;display:flex;align-items:center;gap:7px;border:1px solid #ffffff70;border-radius:30px;background:#171513a8;color:white;padding:7px 11px;font-size:12px;pointer-events:none}
+.project-count{pointer-events:none;z-index:2;backdrop-filter:none}
+.project-open{padding-top:20px}.project-caption{margin-top:0}
+.project-caption>.project-title{grid-column:1/-1;font-family:var(--font-display);font-size:clamp(25px,2.8vw,43px);letter-spacing:-.045em;line-height:1.1;color:var(--paper)}
+.project-watch{display:flex;align-items:center;justify-content:space-between;margin-top:18px;border-bottom:1px solid var(--line-dark);padding-bottom:14px;font-size:14px}
+.project-watch>span{font-size:28px;line-height:1;transition:transform .2s}
+.project-open:hover .project-watch>span{transform:translate(3px,-3px);color:var(--orange)}
+.menu-dialog{overflow:auto;padding-top:max(24px,env(safe-area-inset-top))}
+.menu-dialog nav{margin-top:clamp(30px,7svh,65px)}
+.menu-dialog nav>a{font-size:clamp(52px,18.5vw,75px);line-height:1.15;padding:12px 0}
+.menu-dialog .wordmark{font-size:27px;letter-spacing:-1.6px}
+.menu-email{margin-top:35px}
+.menu-dialog[open]{animation:menu-shell .22s cubic-bezier(.16,1,.3,1) both}
+.menu-dialog[open]::backdrop{animation:menu-backdrop .18s ease-out both}
+.menu-dialog[open] .menu-head,.menu-dialog[open] nav>a,.menu-dialog[open] .menu-email{animation:menu-compose .24s cubic-bezier(.16,1,.3,1) both}
+.menu-dialog[open] nav>a:nth-child(1){animation-delay:30ms}
+.menu-dialog[open] nav>a:nth-child(2){animation-delay:55ms}
+.menu-dialog[open] nav>a:nth-child(3){animation-delay:80ms}
+.menu-dialog[open] nav>a:nth-child(4){animation-delay:105ms}
+.menu-dialog[open] .menu-email{animation-delay:125ms}
+.menu-dialog.is-closing{animation:menu-dismiss .14s ease-in both}
+@keyframes menu-shell{from{clip-path:inset(0 0 100% 0);transform:translateY(-8px)}to{clip-path:inset(0);transform:translateY(0)}}
+@keyframes menu-compose{from{opacity:0;transform:translateY(16px) scale(.99);clip-path:inset(0 0 100% 0)}to{opacity:1;transform:none;clip-path:inset(0)}}
+@keyframes menu-backdrop{from{opacity:0}to{opacity:1}}
+@keyframes menu-dismiss{to{opacity:0;transform:translateY(-8px)}}
+/* The video column follows its native 9:16 ratio: no additional black side rails. */
+.film-dialog{width:calc(min(800px,88svh) * .5625 + 420px);border-radius:16px;border:1px solid #ffffff24}
+.film-layout{grid-template-columns:calc(min(800px,88svh) * .5625) minmax(0,1fr);min-height:0}
+.film-screen{min-height:0;align-self:start;aspect-ratio:9/16;border-radius:15px 0 0 15px;overflow:hidden}
+.film-screen video{height:100%;width:100%;aspect-ratio:9/16;object-fit:contain}
+.film-details{padding:64px 30px 30px}.film-close{background:#2b2725}
+@media(max-width:1000px) and (min-width:701px){.desktop-nav{gap:20px}.header-contact{font-size:17px;gap:10px}.site-header .wordmark{font-size:27px}.hero h1{font-size:13vw}.film-details{padding:60px 22px 25px}}
+@media(max-width:700px){
+ .site-header .wordmark{font-size:27px;letter-spacing:-1.6px}.hero h1{font-size:clamp(70px,19.4vw,132px)}
+ .hero-frames{padding:0}.hero-frame{inset:8px;border-radius:12px}
+ .hero-copy{top:25%}.hero-bottom{align-items:flex-end;flex-wrap:wrap;gap:10px}
+ .hero-choices{min-width:100%;gap:20px}.motion-control{width:auto;height:36px;padding:7px 13px;font-size:11px;border-radius:30px}
+ .motion-label{position:static;width:auto;height:auto;clip:auto;overflow:visible}.motion-icon{font-size:14px}
+ .hero-description{margin-top:22px}.circle-link{margin-top:22px}
+ .project-visual{gap:9px}.project-caption>.project-title{font-size:30px}.project-open{padding-top:18px}
+ .preview-badge{left:10px;bottom:10px;font-size:11px;padding:6px 9px}
+ .contact-links{gap:18px}.social-links{gap:15px 24px;margin-top:18px}
+ .film-dialog{width:100%;max-width:100%;height:100svh;max-height:100svh;border-radius:0;border:0}
+ .film-layout{display:flex;flex-direction:column;padding-top:14px}
+ .film-screen{width:min(calc(100% - 28px),calc(67svh * .5625));margin:0 auto;align-self:center;border-radius:12px;flex-shrink:0}
+ .film-screen video{width:100%;height:auto;aspect-ratio:9/16}
+ .film-details{padding:26px 6% 40px}.film-close{position:fixed;top:10px;right:10px}
+}
+@media(prefers-reduced-motion:reduce){.menu-dialog[open],.menu-dialog[open]::backdrop,.menu-dialog[open] *{animation:none!important}.hero-frame video,.preview-frame video{transition:none}}
