@@ -12,3 +12,5 @@
 *.woff2 binary
 *.mp4 binary
 *.ts binary
+# Published checksums cover text files too, including CRLF in vCard files.
+public/brand-assets/** -text
