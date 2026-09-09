@@ -74,3 +74,4 @@ body{background:#0d0c0b}.site-shell{position:relative;max-width:var(--site-width
  .film-details{padding:26px 6% 40px}.film-close{position:fixed;top:10px;right:10px}
 }
 @media(prefers-reduced-motion:reduce){.menu-dialog[open],.menu-dialog[open]::backdrop,.menu-dialog[open] *{animation:none!important}.hero-frame video,.preview-frame video{transition:none}}
+.site-footer .footer-links{flex-wrap:wrap}

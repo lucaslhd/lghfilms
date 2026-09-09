@@ -3,8 +3,10 @@ import { resolve } from 'node:path';
 import { defineConfig } from 'vite';
 import { projects, clips, media } from './src/content.js';
 import { site } from './src/site.js';
+import { identity, pagePath, markdownPath } from './src/agent-content.js';
+import { agentAssets } from './scripts/agent-assets.mjs';
 const escape = value => value.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;');
-const url = (process.env.SITE_URL || site.currentUrl).replace(/\/$/, '');
+const url = site.currentUrl;
 const brandYaml = () => {
  const css=readFileSync(new URL('./src/brand.css',import.meta.url),'utf8');
  const token=name=>css.match(new RegExp('--'+name+':\\s*([^;]+)'))?.[1].trim();
@@ -54,14 +56,23 @@ function cards() {
  }).join('\n');
 }
 export default defineConfig({
- plugins: [{ name: 'portfolio-static-content', transformIndexHtml(html) {
+ plugins: [{ name: 'portfolio-static-content', transformIndexHtml(html, context) {
+  const path = pagePath(context.path) || '/';
   return html.replaceAll('%SITE_URL%', url).replaceAll('%WHATSAPP%', site.whatsapp)
+   .replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, `<script type="application/ld+json">${JSON.stringify(identity()).replaceAll('<', '\\u003c')}</script>`)
+   .replace('</head>', `<link rel="alternate" type="text/markdown" href="${markdownPath(path)}"/><link rel="describedby" href="/llms.txt"/></head>`)
    .replace('<!-- PROJECT_CARDS -->', cards()).replaceAll('<!-- SOCIAL_LINKS -->', socialLinks()).replace('<!-- LINKEDIN_ICON -->', icon('LinkedIn')).replace('<!-- WHATSAPP_ICON -->', icon('WhatsApp')).replace('<!-- BRAND_YAML -->',escape(brandYaml()));
  }, generateBundle() {
   this.emitFile({type:'asset',fileName:'brand.yaml',source:brandYaml()});
-  this.emitFile({type:'asset', fileName:'robots.txt', source:`User-agent: *\nAllow: /\nSitemap: ${url}/sitemap.xml\n`});
-  this.emitFile({type:'asset', fileName:'sitemap.xml', source:`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>${url}/</loc></url><url><loc>${url}/brandbook/</loc></url></urlset>`});
-  this.emitFile({type:'asset', fileName:'llms.txt', source:`# Lucas Gil Films\n\nProdução e edição de vídeo por Lucas Gil Henriques, São Paulo, Brasil.\n\n## Portfólio\n- [Trabalhos](${url}/#trabalhos): filmes automotivos, histórias e conteúdo em série.\n- [Sobre](${url}/#sobre): trajetória profissional.\n- [Contato](${url}/#contato): conversar sobre um filme.\n`});
+  const assets = agentAssets();
+  for (const [fileName, source] of assets) this.emitFile({type:'asset', fileName, source});
+  const docCSS = ['brand.css','fonts.css','agent-pages.css'].map(name => readFileSync(new URL('./src/' + name, import.meta.url),'utf8')).join('\n');
+  this.emitFile({type:'asset', fileName:'agent-pages.css', source:docCSS});
+  const headers = [...assets.keys()].filter(name => !name.endsWith('.html')).map(name => {
+   const type = name === '.well-known/api-catalog' ? 'application/linkset+json; profile="https://www.rfc-editor.org/info/rfc9727"' : name.endsWith('.md') ? 'text/markdown; charset=utf-8' : name.endsWith('.json') ? 'application/json; charset=utf-8' : name.endsWith('.xml') ? 'application/xml; charset=utf-8' : 'text/plain; charset=utf-8';
+   return `/${name}\n  Content-Type: ${type}\n  Access-Control-Allow-Origin: *\n  Cache-Control: public, max-age=0, must-revalidate\n  Link: </llms.txt>; rel="describedby"; type="text/plain"\n`;
+  }).join('\n');
+  this.emitFile({type:'asset', fileName:'_headers', source:headers});
  }}],
  build: { target: 'es2022', sourcemap: false, assetsInlineLimit: 0, rolldownOptions:{input:{main:resolve('index.html'),brandbook:resolve('brandbook/index.html')}} }, server: { host: '127.0.0.1' },
 });

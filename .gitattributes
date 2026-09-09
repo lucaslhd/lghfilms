@@ -1,0 +1,14 @@
+# Preserve downloadable documents and media byte-for-byte across operating systems.
+*.pdf binary
+*.zip binary
+*.docx binary
+*.xlsx binary
+*.pptx binary
+*.potx binary
+*.png binary
+*.jpg binary
+*.webp binary
+*.avif binary
+*.woff2 binary
+*.mp4 binary
+*.ts binary

@@ -192,3 +192,8 @@ soundButton.addEventListener('click',async()=>{
     soundButton.setAttribute('aria-pressed','true');$('.sound-label').textContent='Pausar som';
   }catch{await context.close();$('.sound-label').textContent='Tentar som novamente';}
 });
+// WebMCP is progressive enhancement; browsers without it load no extra module.
+const modelContext = document.modelContext || navigator.modelContext;
+if (typeof modelContext?.registerTool === 'function') {
+  import('./agent-tools.js').then(({ registerSiteTools }) => registerSiteTools(modelContext, window)).catch(() => {});
+}

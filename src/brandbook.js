@@ -1,3 +1,5 @@
+import './brand-assets-gallery.js';
+import './brand-assets-gallery.css';
 const status=document.querySelector('#copy-status');
 async function copy(value,message){
  try{await navigator.clipboard.writeText(value);status.textContent=message;}

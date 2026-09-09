@@ -1,8 +1,8 @@
 # Lucas Gil Films — portfólio audiovisual
 
-Site estático em HTML, CSS e JavaScript, compilado com Vite. Hospedagem: Netlify. Publicação: https://lucasgil.aotta.com.br/. O subdomínio temporário usa a zona DNS atual de aotta.com.br no Netlify/NS1. O domínio definitivo poderá usar Cloudflare, conforme o planejamento.
+Site em HTML, CSS e JavaScript, compilado com Vite. Domínio definitivo: https://lucasgilfilms.com/. Hospedagem: projeto `papaya-duckanoo-3a793e` no Netlify; DNS no Cloudflare. A função de borda entrega as representações Markdown e preserva o HTML para navegadores.
 
-Repositório: https://github.com/lucaslhd/lghfilms. A publicação atual foi feita pelo Netlify CLI; implantação automática por Git ainda não está configurada.
+Repositório de produção: https://github.com/lucaslhd/lghfilms, branch `main`. Não publicar no antigo projeto `lucasgil-aotta`: ele não atende o domínio definitivo. O ID do projeto correto é `b0020d78-7ad3-4738-b5e4-9cee3b79a88f`.
 
 ## Editar
 
@@ -20,8 +20,10 @@ Os agrupamentos são coleções editoriais do portfólio, não uma afirmação d
 npm ci
 npm run dev
 npm run build
+npm test
 npm run check
 npm run preview
+npm run verify:public -- https://lucasgilfilms.com
 ```
 
 O diretório publicado é `dist`. O Netlify usa `netlify.toml`. Não há servidor de aplicação, banco de dados, rastreadores, cookies de marketing ou chamadas de fontes externas.
@@ -65,7 +67,7 @@ O perfil PDF e a referência visual são materiais de briefing e não fazem part
 
 Nome: Lucas Gil Films. Instagram e YouTube: `lghfilms`. TikTok permanece desativado em `src/site.js` até ter o perfil confirmado. O telefone abre WhatsApp com a mensagem “Lucas, me ajuda com um filme?”.
 
-O domínio definitivo é `lghfilms.com`. Quando estiver conectado ao Netlify, definir `SITE_URL=https://lghfilms.com` no ambiente de build e republicar. Canonical, OG, robots e sitemap acompanham essa variável. Até lá, apontam para o subdomínio temporário operacional.
+O domínio definitivo é `lucasgilfilms.com`. Canonical, Open Graph, dados estruturados, robots e sitemap derivam de `src/site.js`. A antiga variável `SITE_URL` não sobrescreve essa fonte; isso evita publicar referências ao subdomínio temporário por uma configuração de build desatualizada.
 
 A imagem `og-home-v3.jpg` tem 1200 × 630 e 56.555 bytes (JPEG progressivo). A URL nova evita reutilizar a arte antiga em novos compartilhamentos. O tom de superfície laranja é mais profundo para preservar a leitura do texto branco; os acentos mantêm #FA6404.
 

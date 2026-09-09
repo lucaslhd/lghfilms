@@ -1,0 +1,1158 @@
+{
+  "version": "1.0",
+  "brand": "Lucas Gil Films",
+  "assets": [
+    {
+      "id": "lgh-assinatura-principal-claro",
+      "group": "logos",
+      "label": "Assinatura · principal claro",
+      "usage": "Logo transparente para aplicação digital e impressão",
+      "width": 1680,
+      "height": 420,
+      "files": [
+        "logos/lgh-assinatura-principal-claro.svg",
+        "logos/lgh-assinatura-principal-claro.png",
+        "logos/lgh-assinatura-principal-claro.pdf"
+      ],
+      "preview": "logos/lgh-assinatura-principal-claro-preview.webp",
+      "notes": "PDF vetorial em RGB. Para impressão com perfil CMYK específico, solicite conversão à gráfica."
+    },
+    {
+      "id": "lgh-assinatura-descritor-principal-claro",
+      "group": "logos",
+      "label": "Assinatura descritor · principal claro",
+      "usage": "Logo transparente para aplicação digital e impressão",
+      "width": 1680,
+      "height": 520,
+      "files": [
+        "logos/lgh-assinatura-descritor-principal-claro.svg",
+        "logos/lgh-assinatura-descritor-principal-claro.png",
+        "logos/lgh-assinatura-descritor-principal-claro.pdf"
+      ],
+      "preview": "logos/lgh-assinatura-descritor-principal-claro-preview.webp",
+      "notes": "PDF vetorial em RGB. Para impressão com perfil CMYK específico, solicite conversão à gráfica."
+    },
+    {
+      "id": "lgh-monograma-principal-claro",
+      "group": "logos",
+      "label": "Monograma · principal claro",
+      "usage": "Logo transparente para aplicação digital e impressão",
+      "width": 640,
+      "height": 420,
+      "files": [
+        "logos/lgh-monograma-principal-claro.svg",
+        "logos/lgh-monograma-principal-claro.png",
+        "logos/lgh-monograma-principal-claro.pdf"
+      ],
+      "preview": "logos/lgh-monograma-principal-claro-preview.webp",
+      "notes": "PDF vetorial em RGB. Para impressão com perfil CMYK específico, solicite conversão à gráfica."
+    },
+    {
+      "id": "lgh-assinatura-principal-escuro",
+      "group": "logos",
+      "label": "Assinatura · principal escuro",
+      "usage": "Logo transparente para aplicação digital e impressão",
+      "width": 1680,
+      "height": 420,
+      "files": [
+        "logos/lgh-assinatura-principal-escuro.svg",
+        "logos/lgh-assinatura-principal-escuro.png",
+        "logos/lgh-assinatura-principal-escuro.pdf"
+      ],
+      "preview": "logos/lgh-assinatura-principal-escuro-preview.webp",
+      "notes": "PDF vetorial em RGB. Para impressão com perfil CMYK específico, solicite conversão à gráfica."
+    },
+    {
+      "id": "lgh-assinatura-descritor-principal-escuro",
+      "group": "logos",
+      "label": "Assinatura descritor · principal escuro",
+      "usage": "Logo transparente para aplicação digital e impressão",
+      "width": 1680,
+      "height": 520,
+      "files": [
+        "logos/lgh-assinatura-descritor-principal-escuro.svg",
+        "logos/lgh-assinatura-descritor-principal-escuro.png",
+        "logos/lgh-assinatura-descritor-principal-escuro.pdf"
+      ],
+      "preview": "logos/lgh-assinatura-descritor-principal-escuro-preview.webp",
+      "notes": "PDF vetorial em RGB. Para impressão com perfil CMYK específico, solicite conversão à gráfica."
+    },
+    {
+      "id": "lgh-monograma-principal-escuro",
+      "group": "logos",
+      "label": "Monograma · principal escuro",
+      "usage": "Logo transparente para aplicação digital e impressão",
+      "width": 640,
+      "height": 420,
+      "files": [
+        "logos/lgh-monograma-principal-escuro.svg",
+        "logos/lgh-monograma-principal-escuro.png",
+        "logos/lgh-monograma-principal-escuro.pdf"
+      ],
+      "preview": "logos/lgh-monograma-principal-escuro-preview.webp",
+      "notes": "PDF vetorial em RGB. Para impressão com perfil CMYK específico, solicite conversão à gráfica."
+    },
+    {
+      "id": "lgh-assinatura-preto",
+      "group": "logos",
+      "label": "Assinatura · preto",
+      "usage": "Logo transparente para aplicação digital e impressão",
+      "width": 1680,
+      "height": 420,
+      "files": [
+        "logos/lgh-assinatura-preto.svg",
+        "logos/lgh-assinatura-preto.png",
+        "logos/lgh-assinatura-preto.pdf"
+      ],
+      "preview": "logos/lgh-assinatura-preto-preview.webp",
+      "notes": "PDF vetorial em RGB. Para impressão com perfil CMYK específico, solicite conversão à gráfica."
+    },
+    {
+      "id": "lgh-assinatura-descritor-preto",
+      "group": "logos",
+      "label": "Assinatura descritor · preto",
+      "usage": "Logo transparente para aplicação digital e impressão",
+      "width": 1680,
+      "height": 520,
+      "files": [
+        "logos/lgh-assinatura-descritor-preto.svg",
+        "logos/lgh-assinatura-descritor-preto.png",
+        "logos/lgh-assinatura-descritor-preto.pdf"
+      ],
+      "preview": "logos/lgh-assinatura-descritor-preto-preview.webp",
+      "notes": "PDF vetorial em RGB. Para impressão com perfil CMYK específico, solicite conversão à gráfica."
+    },
+    {
+      "id": "lgh-monograma-preto",
+      "group": "logos",
+      "label": "Monograma · preto",
+      "usage": "Logo transparente para aplicação digital e impressão",
+      "width": 640,
+      "height": 420,
+      "files": [
+        "logos/lgh-monograma-preto.svg",
+        "logos/lgh-monograma-preto.png",
+        "logos/lgh-monograma-preto.pdf"
+      ],
+      "preview": "logos/lgh-monograma-preto-preview.webp",
+      "notes": "PDF vetorial em RGB. Para impressão com perfil CMYK específico, solicite conversão à gráfica."
+    },
+    {
+      "id": "lgh-assinatura-branco",
+      "group": "logos",
+      "label": "Assinatura · branco",
+      "usage": "Logo transparente para aplicação digital e impressão",
+      "width": 1680,
+      "height": 420,
+      "files": [
+        "logos/lgh-assinatura-branco.svg",
+        "logos/lgh-assinatura-branco.png",
+        "logos/lgh-assinatura-branco.pdf"
+      ],
+      "preview": "logos/lgh-assinatura-branco-preview.webp",
+      "notes": "PDF vetorial em RGB. Para impressão com perfil CMYK específico, solicite conversão à gráfica."
+    },
+    {
+      "id": "lgh-assinatura-descritor-branco",
+      "group": "logos",
+      "label": "Assinatura descritor · branco",
+      "usage": "Logo transparente para aplicação digital e impressão",
+      "width": 1680,
+      "height": 520,
+      "files": [
+        "logos/lgh-assinatura-descritor-branco.svg",
+        "logos/lgh-assinatura-descritor-branco.png",
+        "logos/lgh-assinatura-descritor-branco.pdf"
+      ],
+      "preview": "logos/lgh-assinatura-descritor-branco-preview.webp",
+      "notes": "PDF vetorial em RGB. Para impressão com perfil CMYK específico, solicite conversão à gráfica."
+    },
+    {
+      "id": "lgh-monograma-branco",
+      "group": "logos",
+      "label": "Monograma · branco",
+      "usage": "Logo transparente para aplicação digital e impressão",
+      "width": 640,
+      "height": 420,
+      "files": [
+        "logos/lgh-monograma-branco.svg",
+        "logos/lgh-monograma-branco.png",
+        "logos/lgh-monograma-branco.pdf"
+      ],
+      "preview": "logos/lgh-monograma-branco-preview.webp",
+      "notes": "PDF vetorial em RGB. Para impressão com perfil CMYK específico, solicite conversão à gráfica."
+    },
+    {
+      "id": "lgh-avatar-master-laranja",
+      "group": "avatares",
+      "label": "Avatar principal · laranja",
+      "usage": "Matriz quadrada com margem para recorte circular",
+      "width": 1080,
+      "height": 1080,
+      "files": [
+        "avatares/lgh-avatar-master-laranja.svg",
+        "avatares/lgh-avatar-master-laranja.png"
+      ],
+      "preview": "avatares/lgh-avatar-master-laranja-preview.webp",
+      "notes": ""
+    },
+    {
+      "id": "lgh-avatar-whatsapp-laranja",
+      "group": "avatares",
+      "label": "Whatsapp · laranja",
+      "usage": "Avatar com recorte circular previsto",
+      "width": 640,
+      "height": 640,
+      "files": [
+        "avatares/lgh-avatar-whatsapp-laranja.png"
+      ],
+      "preview": "avatares/lgh-avatar-whatsapp-laranja-preview.webp",
+      "notes": "Dimensão de exportação do kit; não representa tamanho mínimo exigido pela plataforma."
+    },
+    {
+      "id": "lgh-avatar-tiktok-laranja",
+      "group": "avatares",
+      "label": "Tiktok · laranja",
+      "usage": "Avatar com recorte circular previsto",
+      "width": 400,
+      "height": 400,
+      "files": [
+        "avatares/lgh-avatar-tiktok-laranja.png"
+      ],
+      "preview": "avatares/lgh-avatar-tiktok-laranja-preview.webp",
+      "notes": "Dimensão de exportação do kit; não representa tamanho mínimo exigido pela plataforma."
+    },
+    {
+      "id": "lgh-avatar-vimeo-laranja",
+      "group": "avatares",
+      "label": "Vimeo · laranja",
+      "usage": "Avatar com recorte circular previsto",
+      "width": 600,
+      "height": 600,
+      "files": [
+        "avatares/lgh-avatar-vimeo-laranja.png"
+      ],
+      "preview": "avatares/lgh-avatar-vimeo-laranja-preview.webp",
+      "notes": "Dimensão de exportação do kit; não representa tamanho mínimo exigido pela plataforma."
+    },
+    {
+      "id": "lgh-avatar-instagram-laranja",
+      "group": "avatares",
+      "label": "Instagram · laranja",
+      "usage": "Avatar com recorte circular previsto",
+      "width": 1080,
+      "height": 1080,
+      "files": [
+        "avatares/lgh-avatar-instagram-laranja.png"
+      ],
+      "preview": "avatares/lgh-avatar-instagram-laranja-preview.webp",
+      "notes": "Dimensão de exportação do kit; não representa tamanho mínimo exigido pela plataforma."
+    },
+    {
+      "id": "lgh-avatar-youtube-laranja",
+      "group": "avatares",
+      "label": "Youtube · laranja",
+      "usage": "Avatar com recorte circular previsto",
+      "width": 800,
+      "height": 800,
+      "files": [
+        "avatares/lgh-avatar-youtube-laranja.png"
+      ],
+      "preview": "avatares/lgh-avatar-youtube-laranja-preview.webp",
+      "notes": "Dimensão de exportação do kit; não representa tamanho mínimo exigido pela plataforma."
+    },
+    {
+      "id": "lgh-avatar-linkedin-laranja",
+      "group": "avatares",
+      "label": "Linkedin · laranja",
+      "usage": "Avatar com recorte circular previsto",
+      "width": 400,
+      "height": 400,
+      "files": [
+        "avatares/lgh-avatar-linkedin-laranja.png"
+      ],
+      "preview": "avatares/lgh-avatar-linkedin-laranja-preview.webp",
+      "notes": "Dimensão de exportação do kit; não representa tamanho mínimo exigido pela plataforma."
+    },
+    {
+      "id": "lgh-avatar-facebook-laranja",
+      "group": "avatares",
+      "label": "Facebook · laranja",
+      "usage": "Avatar com recorte circular previsto",
+      "width": 400,
+      "height": 400,
+      "files": [
+        "avatares/lgh-avatar-facebook-laranja.png"
+      ],
+      "preview": "avatares/lgh-avatar-facebook-laranja-preview.webp",
+      "notes": "Dimensão de exportação do kit; não representa tamanho mínimo exigido pela plataforma."
+    },
+    {
+      "id": "lgh-avatar-master-claro",
+      "group": "avatares",
+      "label": "Avatar principal · claro",
+      "usage": "Matriz quadrada com margem para recorte circular",
+      "width": 1080,
+      "height": 1080,
+      "files": [
+        "avatares/lgh-avatar-master-claro.svg",
+        "avatares/lgh-avatar-master-claro.png"
+      ],
+      "preview": "avatares/lgh-avatar-master-claro-preview.webp",
+      "notes": ""
+    },
+    {
+      "id": "lgh-avatar-whatsapp-claro",
+      "group": "avatares",
+      "label": "Whatsapp · claro",
+      "usage": "Avatar com recorte circular previsto",
+      "width": 640,
+      "height": 640,
+      "files": [
+        "avatares/lgh-avatar-whatsapp-claro.png"
+      ],
+      "preview": "avatares/lgh-avatar-whatsapp-claro-preview.webp",
+      "notes": "Dimensão de exportação do kit; não representa tamanho mínimo exigido pela plataforma."
+    },
+    {
+      "id": "lgh-avatar-tiktok-claro",
+      "group": "avatares",
+      "label": "Tiktok · claro",
+      "usage": "Avatar com recorte circular previsto",
+      "width": 400,
+      "height": 400,
+      "files": [
+        "avatares/lgh-avatar-tiktok-claro.png"
+      ],
+      "preview": "avatares/lgh-avatar-tiktok-claro-preview.webp",
+      "notes": "Dimensão de exportação do kit; não representa tamanho mínimo exigido pela plataforma."
+    },
+    {
+      "id": "lgh-avatar-vimeo-claro",
+      "group": "avatares",
+      "label": "Vimeo · claro",
+      "usage": "Avatar com recorte circular previsto",
+      "width": 600,
+      "height": 600,
+      "files": [
+        "avatares/lgh-avatar-vimeo-claro.png"
+      ],
+      "preview": "avatares/lgh-avatar-vimeo-claro-preview.webp",
+      "notes": "Dimensão de exportação do kit; não representa tamanho mínimo exigido pela plataforma."
+    },
+    {
+      "id": "lgh-avatar-instagram-claro",
+      "group": "avatares",
+      "label": "Instagram · claro",
+      "usage": "Avatar com recorte circular previsto",
+      "width": 1080,
+      "height": 1080,
+      "files": [
+        "avatares/lgh-avatar-instagram-claro.png"
+      ],
+      "preview": "avatares/lgh-avatar-instagram-claro-preview.webp",
+      "notes": "Dimensão de exportação do kit; não representa tamanho mínimo exigido pela plataforma."
+    },
+    {
+      "id": "lgh-avatar-youtube-claro",
+      "group": "avatares",
+      "label": "Youtube · claro",
+      "usage": "Avatar com recorte circular previsto",
+      "width": 800,
+      "height": 800,
+      "files": [
+        "avatares/lgh-avatar-youtube-claro.png"
+      ],
+      "preview": "avatares/lgh-avatar-youtube-claro-preview.webp",
+      "notes": "Dimensão de exportação do kit; não representa tamanho mínimo exigido pela plataforma."
+    },
+    {
+      "id": "lgh-avatar-linkedin-claro",
+      "group": "avatares",
+      "label": "Linkedin · claro",
+      "usage": "Avatar com recorte circular previsto",
+      "width": 400,
+      "height": 400,
+      "files": [
+        "avatares/lgh-avatar-linkedin-claro.png"
+      ],
+      "preview": "avatares/lgh-avatar-linkedin-claro-preview.webp",
+      "notes": "Dimensão de exportação do kit; não representa tamanho mínimo exigido pela plataforma."
+    },
+    {
+      "id": "lgh-avatar-facebook-claro",
+      "group": "avatares",
+      "label": "Facebook · claro",
+      "usage": "Avatar com recorte circular previsto",
+      "width": 400,
+      "height": 400,
+      "files": [
+        "avatares/lgh-avatar-facebook-claro.png"
+      ],
+      "preview": "avatares/lgh-avatar-facebook-claro-preview.webp",
+      "notes": "Dimensão de exportação do kit; não representa tamanho mínimo exigido pela plataforma."
+    },
+    {
+      "id": "lgh-avatar-master-escuro",
+      "group": "avatares",
+      "label": "Avatar principal · escuro",
+      "usage": "Matriz quadrada com margem para recorte circular",
+      "width": 1080,
+      "height": 1080,
+      "files": [
+        "avatares/lgh-avatar-master-escuro.svg",
+        "avatares/lgh-avatar-master-escuro.png"
+      ],
+      "preview": "avatares/lgh-avatar-master-escuro-preview.webp",
+      "notes": ""
+    },
+    {
+      "id": "lgh-avatar-whatsapp-escuro",
+      "group": "avatares",
+      "label": "Whatsapp · escuro",
+      "usage": "Avatar com recorte circular previsto",
+      "width": 640,
+      "height": 640,
+      "files": [
+        "avatares/lgh-avatar-whatsapp-escuro.png"
+      ],
+      "preview": "avatares/lgh-avatar-whatsapp-escuro-preview.webp",
+      "notes": "Dimensão de exportação do kit; não representa tamanho mínimo exigido pela plataforma."
+    },
+    {
+      "id": "lgh-avatar-tiktok-escuro",
+      "group": "avatares",
+      "label": "Tiktok · escuro",
+      "usage": "Avatar com recorte circular previsto",
+      "width": 400,
+      "height": 400,
+      "files": [
+        "avatares/lgh-avatar-tiktok-escuro.png"
+      ],
+      "preview": "avatares/lgh-avatar-tiktok-escuro-preview.webp",
+      "notes": "Dimensão de exportação do kit; não representa tamanho mínimo exigido pela plataforma."
+    },
+    {
+      "id": "lgh-avatar-vimeo-escuro",
+      "group": "avatares",
+      "label": "Vimeo · escuro",
+      "usage": "Avatar com recorte circular previsto",
+      "width": 600,
+      "height": 600,
+      "files": [
+        "avatares/lgh-avatar-vimeo-escuro.png"
+      ],
+      "preview": "avatares/lgh-avatar-vimeo-escuro-preview.webp",
+      "notes": "Dimensão de exportação do kit; não representa tamanho mínimo exigido pela plataforma."
+    },
+    {
+      "id": "lgh-avatar-instagram-escuro",
+      "group": "avatares",
+      "label": "Instagram · escuro",
+      "usage": "Avatar com recorte circular previsto",
+      "width": 1080,
+      "height": 1080,
+      "files": [
+        "avatares/lgh-avatar-instagram-escuro.png"
+      ],
+      "preview": "avatares/lgh-avatar-instagram-escuro-preview.webp",
+      "notes": "Dimensão de exportação do kit; não representa tamanho mínimo exigido pela plataforma."
+    },
+    {
+      "id": "lgh-avatar-youtube-escuro",
+      "group": "avatares",
+      "label": "Youtube · escuro",
+      "usage": "Avatar com recorte circular previsto",
+      "width": 800,
+      "height": 800,
+      "files": [
+        "avatares/lgh-avatar-youtube-escuro.png"
+      ],
+      "preview": "avatares/lgh-avatar-youtube-escuro-preview.webp",
+      "notes": "Dimensão de exportação do kit; não representa tamanho mínimo exigido pela plataforma."
+    },
+    {
+      "id": "lgh-avatar-linkedin-escuro",
+      "group": "avatares",
+      "label": "Linkedin · escuro",
+      "usage": "Avatar com recorte circular previsto",
+      "width": 400,
+      "height": 400,
+      "files": [
+        "avatares/lgh-avatar-linkedin-escuro.png"
+      ],
+      "preview": "avatares/lgh-avatar-linkedin-escuro-preview.webp",
+      "notes": "Dimensão de exportação do kit; não representa tamanho mínimo exigido pela plataforma."
+    },
+    {
+      "id": "lgh-avatar-facebook-escuro",
+      "group": "avatares",
+      "label": "Facebook · escuro",
+      "usage": "Avatar com recorte circular previsto",
+      "width": 400,
+      "height": 400,
+      "files": [
+        "avatares/lgh-avatar-facebook-escuro.png"
+      ],
+      "preview": "avatares/lgh-avatar-facebook-escuro-preview.webp",
+      "notes": "Dimensão de exportação do kit; não representa tamanho mínimo exigido pela plataforma."
+    },
+    {
+      "id": "lgh-icone-16",
+      "group": "icones",
+      "label": "Ícone 16 × 16",
+      "usage": "Favicon, atalho e ícone de aplicação",
+      "width": 16,
+      "height": 16,
+      "files": [
+        "icones/lgh-icone-16.png"
+      ],
+      "preview": "icones/lgh-icone-16-preview.webp",
+      "notes": ""
+    },
+    {
+      "id": "lgh-icone-32",
+      "group": "icones",
+      "label": "Ícone 32 × 32",
+      "usage": "Favicon, atalho e ícone de aplicação",
+      "width": 32,
+      "height": 32,
+      "files": [
+        "icones/lgh-icone-32.png"
+      ],
+      "preview": "icones/lgh-icone-32-preview.webp",
+      "notes": ""
+    },
+    {
+      "id": "lgh-icone-48",
+      "group": "icones",
+      "label": "Ícone 48 × 48",
+      "usage": "Favicon, atalho e ícone de aplicação",
+      "width": 48,
+      "height": 48,
+      "files": [
+        "icones/lgh-icone-48.png"
+      ],
+      "preview": "icones/lgh-icone-48-preview.webp",
+      "notes": ""
+    },
+    {
+      "id": "lgh-icone-180",
+      "group": "icones",
+      "label": "Ícone 180 × 180",
+      "usage": "Favicon, atalho e ícone de aplicação",
+      "width": 180,
+      "height": 180,
+      "files": [
+        "icones/lgh-icone-180.png"
+      ],
+      "preview": "icones/lgh-icone-180-preview.webp",
+      "notes": ""
+    },
+    {
+      "id": "lgh-icone-192",
+      "group": "icones",
+      "label": "Ícone 192 × 192",
+      "usage": "Favicon, atalho e ícone de aplicação",
+      "width": 192,
+      "height": 192,
+      "files": [
+        "icones/lgh-icone-192.png"
+      ],
+      "preview": "icones/lgh-icone-192-preview.webp",
+      "notes": ""
+    },
+    {
+      "id": "lgh-icone-512",
+      "group": "icones",
+      "label": "Ícone 512 × 512",
+      "usage": "Favicon, atalho e ícone de aplicação",
+      "width": 512,
+      "height": 512,
+      "files": [
+        "icones/lgh-icone-512.png"
+      ],
+      "preview": "icones/lgh-icone-512-preview.webp",
+      "notes": ""
+    },
+    {
+      "id": "lgh-icone",
+      "group": "icones",
+      "label": "Ícone vetorial",
+      "usage": "Favicon SVG e símbolo da marca",
+      "width": 512,
+      "height": 512,
+      "files": [
+        "icones/lgh-icone.svg",
+        "icones/lgh-favicon.ico"
+      ],
+      "preview": "icones/lgh-icone-preview.webp",
+      "notes": ""
+    },
+    {
+      "id": "lgh-header-linkedin-pessoal",
+      "group": "capas",
+      "label": "LinkedIn pessoal",
+      "usage": "Capa pronta para perfil ou canal",
+      "width": 1584,
+      "height": 396,
+      "files": [
+        "capas/lgh-header-linkedin-pessoal.svg",
+        "capas/lgh-header-linkedin-pessoal.png",
+        "capas/lgh-header-linkedin-pessoal.jpg"
+      ],
+      "preview": "capas/lgh-header-linkedin-pessoal-preview.webp",
+      "notes": "Margem reservada para a foto de perfil. Conferir a prévia de recorte no computador e no celular."
+    },
+    {
+      "id": "lgh-header-linkedin-pagina",
+      "group": "capas",
+      "label": "LinkedIn página",
+      "usage": "Capa pronta para perfil ou canal",
+      "width": 4200,
+      "height": 700,
+      "files": [
+        "capas/lgh-header-linkedin-pagina.svg",
+        "capas/lgh-header-linkedin-pagina.png",
+        "capas/lgh-header-linkedin-pagina.jpg"
+      ],
+      "preview": "capas/lgh-header-linkedin-pagina-preview.webp",
+      "notes": "Margem reservada para a foto de perfil. Conferir a prévia de recorte no computador e no celular."
+    },
+    {
+      "id": "lgh-header-facebook",
+      "group": "capas",
+      "label": "Facebook",
+      "usage": "Capa pronta para perfil ou canal",
+      "width": 1702,
+      "height": 630,
+      "files": [
+        "capas/lgh-header-facebook.svg",
+        "capas/lgh-header-facebook.png",
+        "capas/lgh-header-facebook.jpg"
+      ],
+      "preview": "capas/lgh-header-facebook-preview.webp",
+      "notes": "Margem reservada para a foto de perfil. Conferir a prévia de recorte no computador e no celular."
+    },
+    {
+      "id": "lgh-header-youtube",
+      "group": "capas",
+      "label": "YouTube",
+      "usage": "Capa pronta para perfil ou canal",
+      "width": 2560,
+      "height": 1440,
+      "files": [
+        "capas/lgh-header-youtube.svg",
+        "capas/lgh-header-youtube.png",
+        "capas/lgh-header-youtube.jpg"
+      ],
+      "preview": "capas/lgh-header-youtube-preview.webp",
+      "notes": "Conteúdo principal dentro da área central de 1544 × 422 px. Conferir o recorte no upload."
+    },
+    {
+      "id": "lgh-filme-quadrado",
+      "group": "redes",
+      "label": "Novo filme · quadrado",
+      "usage": "Template para editar título e conteúdo antes de publicar",
+      "width": 1080,
+      "height": 1080,
+      "files": [
+        "redes/lgh-filme-quadrado.svg",
+        "redes/lgh-filme-quadrado.png"
+      ],
+      "preview": "redes/lgh-filme-quadrado-preview.webp",
+      "notes": "O SVG mantém o texto editável. Instale as fontes do kit. O PNG mostra a aplicação e não permite editar o texto."
+    },
+    {
+      "id": "lgh-filme-feed",
+      "group": "redes",
+      "label": "Novo filme · feed",
+      "usage": "Template para editar título e conteúdo antes de publicar",
+      "width": 1080,
+      "height": 1350,
+      "files": [
+        "redes/lgh-filme-feed.svg",
+        "redes/lgh-filme-feed.png"
+      ],
+      "preview": "redes/lgh-filme-feed-preview.webp",
+      "notes": "O SVG mantém o texto editável. Instale as fontes do kit. O PNG mostra a aplicação e não permite editar o texto."
+    },
+    {
+      "id": "lgh-filme-story",
+      "group": "redes",
+      "label": "Novo filme · story",
+      "usage": "Template para editar título e conteúdo antes de publicar",
+      "width": 1080,
+      "height": 1920,
+      "files": [
+        "redes/lgh-filme-story.svg",
+        "redes/lgh-filme-story.png"
+      ],
+      "preview": "redes/lgh-filme-story-preview.webp",
+      "notes": "O SVG mantém o texto editável. Instale as fontes do kit. O PNG mostra a aplicação e não permite editar o texto."
+    },
+    {
+      "id": "lgh-filme-thumbnail",
+      "group": "redes",
+      "label": "Novo filme · thumbnail",
+      "usage": "Template para editar título e conteúdo antes de publicar",
+      "width": 1280,
+      "height": 720,
+      "files": [
+        "redes/lgh-filme-thumbnail.svg",
+        "redes/lgh-filme-thumbnail.png"
+      ],
+      "preview": "redes/lgh-filme-thumbnail-preview.webp",
+      "notes": "O SVG mantém o texto editável. Instale as fontes do kit. O PNG mostra a aplicação e não permite editar o texto."
+    },
+    {
+      "id": "lgh-projeto-quadrado",
+      "group": "redes",
+      "label": "Projeto · quadrado",
+      "usage": "Template para editar título e conteúdo antes de publicar",
+      "width": 1080,
+      "height": 1080,
+      "files": [
+        "redes/lgh-projeto-quadrado.svg",
+        "redes/lgh-projeto-quadrado.png"
+      ],
+      "preview": "redes/lgh-projeto-quadrado-preview.webp",
+      "notes": "O SVG mantém o texto editável. Instale as fontes do kit. O PNG mostra a aplicação e não permite editar o texto."
+    },
+    {
+      "id": "lgh-projeto-feed",
+      "group": "redes",
+      "label": "Projeto · feed",
+      "usage": "Template para editar título e conteúdo antes de publicar",
+      "width": 1080,
+      "height": 1350,
+      "files": [
+        "redes/lgh-projeto-feed.svg",
+        "redes/lgh-projeto-feed.png"
+      ],
+      "preview": "redes/lgh-projeto-feed-preview.webp",
+      "notes": "O SVG mantém o texto editável. Instale as fontes do kit. O PNG mostra a aplicação e não permite editar o texto."
+    },
+    {
+      "id": "lgh-projeto-story",
+      "group": "redes",
+      "label": "Projeto · story",
+      "usage": "Template para editar título e conteúdo antes de publicar",
+      "width": 1080,
+      "height": 1920,
+      "files": [
+        "redes/lgh-projeto-story.svg",
+        "redes/lgh-projeto-story.png"
+      ],
+      "preview": "redes/lgh-projeto-story-preview.webp",
+      "notes": "O SVG mantém o texto editável. Instale as fontes do kit. O PNG mostra a aplicação e não permite editar o texto."
+    },
+    {
+      "id": "lgh-projeto-thumbnail",
+      "group": "redes",
+      "label": "Projeto · thumbnail",
+      "usage": "Template para editar título e conteúdo antes de publicar",
+      "width": 1280,
+      "height": 720,
+      "files": [
+        "redes/lgh-projeto-thumbnail.svg",
+        "redes/lgh-projeto-thumbnail.png"
+      ],
+      "preview": "redes/lgh-projeto-thumbnail-preview.webp",
+      "notes": "O SVG mantém o texto editável. Instale as fontes do kit. O PNG mostra a aplicação e não permite editar o texto."
+    },
+    {
+      "id": "lgh-bastidores-quadrado",
+      "group": "redes",
+      "label": "Bastidores · quadrado",
+      "usage": "Template para editar título e conteúdo antes de publicar",
+      "width": 1080,
+      "height": 1080,
+      "files": [
+        "redes/lgh-bastidores-quadrado.svg",
+        "redes/lgh-bastidores-quadrado.png"
+      ],
+      "preview": "redes/lgh-bastidores-quadrado-preview.webp",
+      "notes": "O SVG mantém o texto editável. Instale as fontes do kit. O PNG mostra a aplicação e não permite editar o texto."
+    },
+    {
+      "id": "lgh-bastidores-feed",
+      "group": "redes",
+      "label": "Bastidores · feed",
+      "usage": "Template para editar título e conteúdo antes de publicar",
+      "width": 1080,
+      "height": 1350,
+      "files": [
+        "redes/lgh-bastidores-feed.svg",
+        "redes/lgh-bastidores-feed.png"
+      ],
+      "preview": "redes/lgh-bastidores-feed-preview.webp",
+      "notes": "O SVG mantém o texto editável. Instale as fontes do kit. O PNG mostra a aplicação e não permite editar o texto."
+    },
+    {
+      "id": "lgh-bastidores-story",
+      "group": "redes",
+      "label": "Bastidores · story",
+      "usage": "Template para editar título e conteúdo antes de publicar",
+      "width": 1080,
+      "height": 1920,
+      "files": [
+        "redes/lgh-bastidores-story.svg",
+        "redes/lgh-bastidores-story.png"
+      ],
+      "preview": "redes/lgh-bastidores-story-preview.webp",
+      "notes": "O SVG mantém o texto editável. Instale as fontes do kit. O PNG mostra a aplicação e não permite editar o texto."
+    },
+    {
+      "id": "lgh-bastidores-thumbnail",
+      "group": "redes",
+      "label": "Bastidores · thumbnail",
+      "usage": "Template para editar título e conteúdo antes de publicar",
+      "width": 1280,
+      "height": 720,
+      "files": [
+        "redes/lgh-bastidores-thumbnail.svg",
+        "redes/lgh-bastidores-thumbnail.png"
+      ],
+      "preview": "redes/lgh-bastidores-thumbnail-preview.webp",
+      "notes": "O SVG mantém o texto editável. Instale as fontes do kit. O PNG mostra a aplicação e não permite editar o texto."
+    },
+    {
+      "id": "lgh-contato-quadrado",
+      "group": "redes",
+      "label": "Vamos filmar · quadrado",
+      "usage": "Template para editar título e conteúdo antes de publicar",
+      "width": 1080,
+      "height": 1080,
+      "files": [
+        "redes/lgh-contato-quadrado.svg",
+        "redes/lgh-contato-quadrado.png"
+      ],
+      "preview": "redes/lgh-contato-quadrado-preview.webp",
+      "notes": "O SVG mantém o texto editável. Instale as fontes do kit. O PNG mostra a aplicação e não permite editar o texto."
+    },
+    {
+      "id": "lgh-contato-feed",
+      "group": "redes",
+      "label": "Vamos filmar · feed",
+      "usage": "Template para editar título e conteúdo antes de publicar",
+      "width": 1080,
+      "height": 1350,
+      "files": [
+        "redes/lgh-contato-feed.svg",
+        "redes/lgh-contato-feed.png"
+      ],
+      "preview": "redes/lgh-contato-feed-preview.webp",
+      "notes": "O SVG mantém o texto editável. Instale as fontes do kit. O PNG mostra a aplicação e não permite editar o texto."
+    },
+    {
+      "id": "lgh-contato-story",
+      "group": "redes",
+      "label": "Vamos filmar · story",
+      "usage": "Template para editar título e conteúdo antes de publicar",
+      "width": 1080,
+      "height": 1920,
+      "files": [
+        "redes/lgh-contato-story.svg",
+        "redes/lgh-contato-story.png"
+      ],
+      "preview": "redes/lgh-contato-story-preview.webp",
+      "notes": "O SVG mantém o texto editável. Instale as fontes do kit. O PNG mostra a aplicação e não permite editar o texto."
+    },
+    {
+      "id": "lgh-contato-thumbnail",
+      "group": "redes",
+      "label": "Vamos filmar · thumbnail",
+      "usage": "Template para editar título e conteúdo antes de publicar",
+      "width": 1280,
+      "height": 720,
+      "files": [
+        "redes/lgh-contato-thumbnail.svg",
+        "redes/lgh-contato-thumbnail.png"
+      ],
+      "preview": "redes/lgh-contato-thumbnail-preview.webp",
+      "notes": "O SVG mantém o texto editável. Instale as fontes do kit. O PNG mostra a aplicação e não permite editar o texto."
+    },
+    {
+      "id": "lgh-cartela-abertura-horizontal",
+      "group": "video",
+      "label": "Abertura · horizontal",
+      "usage": "Cartela estática para edição de vídeo",
+      "width": 1920,
+      "height": 1080,
+      "files": [
+        "video/lgh-cartela-abertura-horizontal.svg",
+        "video/lgh-cartela-abertura-horizontal.png"
+      ],
+      "preview": "video/lgh-cartela-abertura-horizontal-preview.webp",
+      "notes": ""
+    },
+    {
+      "id": "lgh-cartela-encerramento-horizontal",
+      "group": "video",
+      "label": "Encerramento · horizontal",
+      "usage": "Cartela estática para edição de vídeo",
+      "width": 1920,
+      "height": 1080,
+      "files": [
+        "video/lgh-cartela-encerramento-horizontal.svg",
+        "video/lgh-cartela-encerramento-horizontal.png"
+      ],
+      "preview": "video/lgh-cartela-encerramento-horizontal-preview.webp",
+      "notes": ""
+    },
+    {
+      "id": "lgh-identificacao-horizontal",
+      "group": "video",
+      "label": "Identificação · horizontal",
+      "usage": "Sobreposição transparente com nome e função",
+      "width": 1920,
+      "height": 1080,
+      "files": [
+        "video/lgh-identificacao-horizontal.svg",
+        "video/lgh-identificacao-horizontal.png"
+      ],
+      "preview": "video/lgh-identificacao-horizontal-preview.webp",
+      "notes": ""
+    },
+    {
+      "id": "lgh-cartela-abertura-vertical",
+      "group": "video",
+      "label": "Abertura · vertical",
+      "usage": "Cartela estática para edição de vídeo",
+      "width": 1080,
+      "height": 1920,
+      "files": [
+        "video/lgh-cartela-abertura-vertical.svg",
+        "video/lgh-cartela-abertura-vertical.png"
+      ],
+      "preview": "video/lgh-cartela-abertura-vertical-preview.webp",
+      "notes": ""
+    },
+    {
+      "id": "lgh-cartela-encerramento-vertical",
+      "group": "video",
+      "label": "Encerramento · vertical",
+      "usage": "Cartela estática para edição de vídeo",
+      "width": 1080,
+      "height": 1920,
+      "files": [
+        "video/lgh-cartela-encerramento-vertical.svg",
+        "video/lgh-cartela-encerramento-vertical.png"
+      ],
+      "preview": "video/lgh-cartela-encerramento-vertical-preview.webp",
+      "notes": ""
+    },
+    {
+      "id": "lgh-identificacao-vertical",
+      "group": "video",
+      "label": "Identificação · vertical",
+      "usage": "Sobreposição transparente com nome e função",
+      "width": 1080,
+      "height": 1920,
+      "files": [
+        "video/lgh-identificacao-vertical.svg",
+        "video/lgh-identificacao-vertical.png"
+      ],
+      "preview": "video/lgh-identificacao-vertical-preview.webp",
+      "notes": ""
+    },
+    {
+      "id": "lgh-marca-dagua-preto-assinatura",
+      "group": "video",
+      "label": "Marca d’água preto assinatura",
+      "usage": "Ajustar escala e opacidade no editor de vídeo",
+      "width": 900,
+      "height": 240,
+      "files": [
+        "video/lgh-marca-dagua-preto-assinatura.svg",
+        "video/lgh-marca-dagua-preto-assinatura.png"
+      ],
+      "preview": "video/lgh-marca-dagua-preto-assinatura-preview.webp",
+      "notes": ""
+    },
+    {
+      "id": "lgh-marca-dagua-preto-compacta",
+      "group": "video",
+      "label": "Marca d’água preto compacta",
+      "usage": "Ajustar escala e opacidade no editor de vídeo",
+      "width": 400,
+      "height": 240,
+      "files": [
+        "video/lgh-marca-dagua-preto-compacta.svg",
+        "video/lgh-marca-dagua-preto-compacta.png"
+      ],
+      "preview": "video/lgh-marca-dagua-preto-compacta-preview.webp",
+      "notes": ""
+    },
+    {
+      "id": "lgh-marca-dagua-branco-assinatura",
+      "group": "video",
+      "label": "Marca d’água branco assinatura",
+      "usage": "Ajustar escala e opacidade no editor de vídeo",
+      "width": 900,
+      "height": 240,
+      "files": [
+        "video/lgh-marca-dagua-branco-assinatura.svg",
+        "video/lgh-marca-dagua-branco-assinatura.png"
+      ],
+      "preview": "video/lgh-marca-dagua-branco-assinatura-preview.webp",
+      "notes": ""
+    },
+    {
+      "id": "lgh-marca-dagua-branco-compacta",
+      "group": "video",
+      "label": "Marca d’água branco compacta",
+      "usage": "Ajustar escala e opacidade no editor de vídeo",
+      "width": 400,
+      "height": 240,
+      "files": [
+        "video/lgh-marca-dagua-branco-compacta.svg",
+        "video/lgh-marca-dagua-branco-compacta.png"
+      ],
+      "preview": "video/lgh-marca-dagua-branco-compacta-preview.webp",
+      "notes": ""
+    },
+    {
+      "id": "lgh-cartao-digital",
+      "group": "papelaria",
+      "label": "Cartão digital",
+      "usage": "Contato para compartilhar em mensagens",
+      "width": 1080,
+      "height": 1350,
+      "files": [
+        "papelaria/lgh-cartao-digital.svg",
+        "papelaria/lgh-cartao-digital.png",
+        "papelaria/lgh-cartao-digital.pdf"
+      ],
+      "preview": "papelaria/lgh-cartao-digital-preview.webp",
+      "notes": ""
+    },
+    {
+      "id": "lgh-assinatura-email",
+      "group": "papelaria",
+      "label": "Assinatura de e-mail",
+      "usage": "Versão em imagem e SVG",
+      "width": 1200,
+      "height": 360,
+      "files": [
+        "papelaria/lgh-assinatura-email.svg",
+        "papelaria/lgh-assinatura-email.png",
+        "papelaria/assinatura-email.html"
+      ],
+      "preview": "papelaria/lgh-assinatura-email-preview.webp",
+      "notes": ""
+    },
+    {
+      "id": "lgh-proposta-comercial",
+      "group": "documentos",
+      "label": "Proposta comercial",
+      "usage": "Modelo editável de 3 páginas",
+      "files": [
+        "documentos/lgh-proposta-comercial.docx",
+        "documentos/lgh-proposta-comercial.pdf"
+      ],
+      "preview": "documentos/lgh-proposta-comercial-preview.webp",
+      "notes": "Preencha objetivo, entregas, valores e condições antes de enviar. O PDF apresenta o modelo em branco."
+    },
+    {
+      "id": "lgh-briefing-audiovisual",
+      "group": "documentos",
+      "label": "Briefing audiovisual",
+      "usage": "Questionário editável de 2 páginas",
+      "files": [
+        "documentos/lgh-briefing-audiovisual.docx",
+        "documentos/lgh-briefing-audiovisual.pdf"
+      ],
+      "preview": "documentos/lgh-briefing-audiovisual-preview.webp",
+      "notes": "Preencha com o cliente para definir o projeto."
+    },
+    {
+      "id": "lgh-papel-timbrado",
+      "group": "documentos",
+      "label": "Papel timbrado",
+      "usage": "Modelo de documento e correspondência",
+      "files": [
+        "documentos/lgh-papel-timbrado.docx",
+        "documentos/lgh-papel-timbrado.pdf"
+      ],
+      "preview": "documentos/lgh-papel-timbrado-preview.webp",
+      "notes": "Instale as fontes do kit antes de editar no Word."
+    },
+    {
+      "id": "lgh-template-apresentacoes",
+      "group": "documentos",
+      "label": "Apresentação LGH",
+      "usage": "12 layouts editáveis com a estrutura da Aotta adaptada",
+      "files": [
+        "documentos/lgh-template-apresentacoes.pptx",
+        "documentos/lgh-template-apresentacoes.potx",
+        "documentos/lgh-template-apresentacoes.pdf"
+      ],
+      "preview": "documentos/lgh-template-apresentacoes-preview.webp",
+      "notes": "O POTX cria uma nova apresentação. Use Novo Slide para escolher um dos 12 layouts ou duplique um exemplo, especialmente as tabelas. Instale as fontes do kit. A grade e a hierarquia foram adaptadas da referência Aotta; os masters são próprios da LGH."
+    },
+    {
+      "id": "lgh-kit-producao",
+      "group": "documentos",
+      "label": "Cronograma e lista de planos",
+      "usage": "Planilha com datas automáticas e controle de captação",
+      "files": [
+        "documentos/lgh-kit-producao.xlsx",
+        "documentos/lgh-kit-producao.pdf"
+      ],
+      "preview": "documentos/lgh-kit-producao-preview.webp",
+      "notes": "Defina a data inicial e ajuste os dias e as durações. O exemplo usa dias corridos e não recalcula dependências entre etapas. A segunda aba registra planos e arquivos de captação."
+    },
+    {
+      "id": "lgh-guia-do-kit",
+      "group": "documentos",
+      "label": "Guia de uso",
+      "usage": "Referência de cores, formatos e aplicações",
+      "files": [
+        "documentos/lgh-guia-do-kit.pdf"
+      ],
+      "preview": "documentos/lgh-guia-do-kit-preview.webp",
+      "notes": "Consulte antes de editar ou encaminhar os materiais."
+    },
+    {
+      "id": "lgh-contato-vcf",
+      "group": "papelaria",
+      "label": "Contato Lucas Gil Henriques",
+      "usage": "Contato para importar na agenda",
+      "files": [
+        "papelaria/lucas-gil-henriques.vcf"
+      ],
+      "preview": "papelaria/lgh-cartao-digital-preview.webp",
+      "notes": "Contém nome, telefone público e Instagram."
+    },
+    {
+      "id": "space-grotesk",
+      "group": "fontes",
+      "label": "Space Grotesk Semibold",
+      "usage": "Fonte para instalar e editar os modelos",
+      "files": [
+        "fontes/SpaceGrotesk-Semibold.ttf",
+        "fontes/space-grotesk-OFL.txt"
+      ],
+      "preview": "logos/lgh-assinatura-principal-claro-preview.webp",
+      "notes": "Licença SIL Open Font License 1.1 incluída."
+    },
+    {
+      "id": "manrope",
+      "group": "fontes",
+      "label": "Manrope Regular",
+      "usage": "Fonte para instalar e editar os modelos",
+      "files": [
+        "fontes/Manrope-Regular.ttf",
+        "fontes/manrope-OFL.txt"
+      ],
+      "preview": "logos/lgh-assinatura-principal-claro-preview.webp",
+      "notes": "Licença SIL Open Font License 1.1 incluída."
+    }
+  ],
+  "stats": {
+    "pieces": 84,
+    "downloads": 158
+  }
+}
