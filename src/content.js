@@ -1,14 +1,14 @@
 // Lucas Gil Films V2 — dez filmes novos aprovados.
 export const clips = Object.fromEntries(Array.from({length:10},(_,i)=>{const n=String(i+1).padStart(2,'0');return [`film${n}`,{title:`Film ${n}`,duration:'—'}]}));
 const themes=[
- ['AUTOMOTIVO','SUPERCARROS','Paixão sobre rodas. Performance em outro nível.'],
- ['CASAMENTO','UM DIA PARA SEMPRE','Emoção em cada detalhe. Histórias de amor reais.'],
- ['EVENTOS','PROPÓSITO EM MOVIMENTO','Eventos que inspiram e deixam legado.'],
- ['DOCUMENTÁRIO','VIDAS REAIS','Histórias que precisam ser contadas.'],
- ['DRONE','OUTRA PERSPECTIVA','O mundo visto de cima. Beleza em cada ângulo.'],
- ['INSTITUCIONAL','MARCAS QUE CONSTROEM','Mais que empresas, pessoas e propósitos.'],
- ['BEAUTY','BELEZA EM MOVIMENTO','Estética, sensibilidade e autenticidade.'],
- ['GASTRONOMIA','SABORES QUE INSPIRAM','Experiências que despertam os sentidos.'],
+ ['AUTOMOTIVO','DETALHES QUE ACELERAM','Design, performance e presença em cada frame.'],
+ ['AUTOMOTIVO','LUXO EM CADA DETALHE','Acabamento, tecnologia e experiência traduzidos em imagem.'],
+ ['FILME 03','EM ANÁLISE','Capa definitiva será criada a partir do conteúdo real do filme.'],
+ ['ODONTOLOGIA','PRECISÃO QUE TRANSFORMA','Tecnologia, cuidado e confiança em uma narrativa visual precisa.'],
+ ['ODONTOLOGIA','CONFIANÇA EM CADA SORRISO','Pessoas, atendimento e transformação apresentados com autenticidade.'],
+ ['EVENTO & ARTE','IDEIAS EM MOVIMENTO','Cultura, criatividade e experiência transformadas em filme.'],
+ ['FILME 07','EM ANÁLISE','Capa definitiva será criada a partir do conteúdo real do filme.'],
+ ['AUTOMOTIVO','FORÇA EM CADA DETALHE','Chevrolet, identidade e movimento em uma estética cinematográfica.'],
  ['LIFESTYLE','O QUE REALMENTE IMPORTA','Momentos simples. Grandes histórias.'],
  ['MAKING OF','POR TRÁS DAS CÂMERAS','O processo que dá vida às grandes histórias.']
 ];
