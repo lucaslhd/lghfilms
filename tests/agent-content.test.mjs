@@ -5,6 +5,7 @@ import { createHash } from 'node:crypto';
 import { join } from 'node:path';
 import Ajv from 'ajv/dist/2020.js';
 import { markdownDocuments, publicData, origin } from '../src/agent-content.js';
+import { site } from '../src/site.js';
 import { createTools, registerSiteTools } from '../src/agent-tools.js';
 const read = path => readFile(join('dist', path), 'utf8');
 
@@ -17,7 +18,7 @@ test('Canonical and identity use the live domain across all public pages', async
       const graph = JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1])['@graph'];
       const person = graph.find(entry => entry['@type'] === 'Person');
       assert.equal(person.name, 'Lucas Gil Henriques'); assert.equal(person.alternateName, 'Lucas Gil Films');
-      assert.ok(person.description.length > 40); assert.equal(person.sameAs.length, 3);
+      assert.ok(person.description.length > 40); assert.equal(person.sameAs.length, Object.values(site.socials).filter(Boolean).length);
     }
   }
 });

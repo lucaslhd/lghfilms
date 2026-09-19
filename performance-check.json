@@ -1,9 +1,8 @@
 {
-  "coreCompressedBytes": 17867,
+  "coreCompressedBytes": 17294,
   "fontBytes": 24500,
-  "desktopHeroPostersPlusFontsBytes": 71016,
-  "videos": 9,
-  "segments": 360,
-  "videoBytes": 288988900,
+  "videos": 10,
+  "mediaVersion": "v3",
+  "note": "V2 media derivatives are validated after the optimized film01-film10 assets are generated.",
   "errors": []
 }
