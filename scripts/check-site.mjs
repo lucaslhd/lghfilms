@@ -22,10 +22,10 @@ const coreBytes = gzipSync(html).length + (await Promise.all(
 )).reduce((a, b) => a + b, 0);
 requireCheck(coreBytes < 30000, `Initial HTML/CSS/JS budget exceeded: ${coreBytes}`);
 
-const expectedFilms = Array.from({ length: 10 }, (_, i) => `film${String(i + 1).padStart(2, '0')}`);
+const expectedFilms = ['01', '02', '04', '05', '06', '08'].map(n => `film${n}`);
 const clipIds = Object.keys(clips);
-requireCheck(clipIds.length === 10, `V2 must contain exactly 10 films; found ${clipIds.length}`);
-requireCheck(expectedFilms.every(id => clipIds.includes(id)), 'V2 film IDs must be film01 through film10');
+requireCheck(clipIds.length === 6, `V2 must contain exactly 6 films; found ${clipIds.length}`);
+requireCheck(expectedFilms.every(id => clipIds.includes(id)), 'V2 film IDs must match approved films: 01, 02, 04, 05, 06, 08');
 
 const source = await readFile(resolve('src/content.js'), 'utf8');
 requireCheck(source.includes('/media/v3/'), 'V2 media must use the versioned /media/v3 path');
@@ -44,7 +44,7 @@ const report = {
   fontBytes,
   videos: clipIds.length,
   mediaVersion: 'v3',
-  note: 'V2 media derivatives are validated after the optimized film01-film10 assets are generated.',
+  note: 'V2 media derivatives are validated after the optimized film01-film08 assets are generated.',
   errors
 };
 

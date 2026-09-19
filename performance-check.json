@@ -1,8 +1,8 @@
 {
-  "coreCompressedBytes": 10128,
+  "coreCompressedBytes": 10382,
   "fontBytes": 24500,
-  "videos": 10,
+  "videos": 6,
   "mediaVersion": "v3",
-  "note": "V2 media derivatives are validated after the optimized film01-film10 assets are generated.",
+  "note": "V2 media derivatives are validated after the optimized film01-film08 assets are generated.",
   "errors": []
 }
