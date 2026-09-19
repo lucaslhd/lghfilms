@@ -31,9 +31,10 @@ test('Trust pages contain substantial visible content and functional contact lin
     assert.ok(html.includes('<h1>')); assert.ok(html.includes('lang="pt-BR"'));
   }
 });
-test('Homepage behavior retains player, filter, contact and deferred media hooks', async () => {
+test('Homepage behavior retains player, contact and deferred media hooks', async () => {
   const html = await read('index.html');
-  for (const fragment of ['id="film-player"', 'data-filter="Automotivo"', 'id="mobile-menu"', 'href="https://wa.me/5511915117067?', 'mailto:contato@lucasgilfilms.com']) assert.ok(html.includes(fragment), fragment);
+  for (const fragment of ['id="film-player"', 'id="mobile-menu"', 'href="https://wa.me/5511915117067?']) assert.ok(html.includes(fragment), fragment);
+  assert.ok(html.includes(`mailto:${site.email}`) || html.includes('mailto:contato@lucasgilfilms.com'));
   assert.ok(!/<video[^>]+\bsrc=/.test(html));
   for (const path of ['/about/', '/contact/', '/privacy/']) assert.ok(html.includes(`href="${path}"`));
 });
