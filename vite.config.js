@@ -81,5 +81,5 @@ export default defineConfig({
   }).join('\n');
   this.emitFile({type:'asset', fileName:'_headers', source:headers});
  }}],
- build: { target: 'es2022', sourcemap: false, assetsInlineLimit: 0, rolldownOptions:{input:{main:resolve('index.html'),brandbook:resolve('brandbook/index.html')}} }, server: { host: '127.0.0.1' },
+ build: { target: 'es2022', sourcemap: false, assetsInlineLimit: 0, rolldownOptions:{input:{main:resolve('index.html'),brandbook:resolve('brandbook/index.html'),fotografia:resolve('fotografia/index.html'),design:resolve('design/index.html')}} }, server: { host: '127.0.0.1' },
 });
