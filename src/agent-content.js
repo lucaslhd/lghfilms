@@ -34,10 +34,41 @@ export const pages = {
     ],
   },
   '/about/': {
-    title: 'Sobre Lucas Gil Films', description: 'Conheça Lucas Gil Henriques, produtor e editor de vídeos baseado em São Paulo.',
+    title: 'Lucas Gil Henriques', description: 'Filmmaker • Videomaker • Fotógrafo • Designer • Comunicador',
     sections: [
-      { heading: 'Olhar atento. Ideias em movimento.', paragraphs: ['Lucas Gil Films é o nome do portfólio audiovisual de Lucas Gil Henriques, produtor e editor de vídeos baseado em São Paulo, Brasil. A trajetória apresentada neste site passa pela direção de arte, fotografia, design gráfico e produção audiovisual. O trabalho conecta imagem, ritmo e intenção para dar forma a histórias, pessoas e marcas.', 'A atuação inclui o planejamento e a captação de imagens, a seleção de cenas, a montagem, a finalização de cor e som, além de fotografia e direção de arte. Cada projeto começa pela compreensão da história que se pretende contar e do contexto em que as imagens serão apresentadas.'] },
-      { heading: 'O que você encontra no portfólio', paragraphs: ['Os trabalhos selecionados estão organizados em filmes automotivos, histórias e conteúdo em série. As coleções reúnem diferentes exemplos de linguagem visual, narrativa e edição. São agrupamentos editoriais do portfólio: a presença de vários filmes em uma seleção não significa que todos pertençam à mesma campanha.', 'Você pode explorar as categorias e abrir os filmes na página inicial. Para conversar sobre uma nova produção ou edição, consulte os canais de contato publicados. Escopo, disponibilidade, orçamento e condições são combinados diretamente com Lucas, de acordo com o projeto.'], links: [link('Ver os trabalhos', '/#trabalhos'), link('Conversar sobre um projeto', '/contact/'), ...Object.entries(site.socials).filter(([, url]) => url).map(([name, url]) => link(name, url))] },
+      {
+        heading: 'Minha História',
+        paragraphs: [
+          'Lucas Gil Henriques, 33 anos, é casado e pai de Arthur Henriques e Maya Henriques. Cristão e apaixonado pela Palavra de Deus, tem na fé, na família e em seus princípios a base que direciona sua vida pessoal e profissional.',
+          'Criativo por essência e apaixonado pelo audiovisual, Lucas construiu sua trajetória transformando ideias, histórias e momentos em imagens capazes de comunicar, emocionar e permanecer na memória.',
+          'Sua experiência reúne diferentes áreas da comunicação e da produção criativa, com atuação como filmmaker, na produção audiovisual, captação e edição de vídeos, fotografia, design gráfico, identidade visual, criação de conteúdo e desenvolvimento de projetos digitais.',
+          'À frente da Lucas Gil Films, desenvolve produções audiovisuais com uma proposta que vai além de simplesmente registrar imagens. Seu trabalho busca construir narrativas, explorar movimentos, luz, enquadramentos, ritmo e emoção para entregar uma experiência visual com identidade cinematográfica.',
+          'Sua atuação também envolve projetos de comunicação digital e desenvolvimento visual, unindo conhecimentos de design, audiovisual e tecnologia para criar experiências completas para pessoas, marcas, empresas, igrejas, eventos e projetos especiais.',
+          'Para Lucas, uma câmera não é apenas uma ferramenta de trabalho. É uma maneira de enxergar histórias que muitas vezes passam despercebidas e transformá-las em algo que possa ser visto, sentido e lembrado.',
+          'Sua caminhada profissional continua sendo construída sobre três pilares que também representam quem ele é fora das câmeras:',
+          'Fé. Família. Propósito.',
+          'Mais do que produzir vídeos, Lucas Gil Henriques acredita em transformar histórias reais em experiências cinematográficas.',
+        ],
+      },
+      {
+        heading: 'CONTATO',
+        paragraphs: [
+          'WhatsApp: (11) 9 1511-7067',
+          'E-mail: lucasgilhenriques@gmail.com',
+          'Instagram: @lucas.henriques_ofilmmaker',
+          'Facebook: Lucas Henriques',
+          'LinkedIn: Lucas Gil Henriques',
+        ],
+        links: [
+          link('WhatsApp: (11) 9 1511-7067', site.whatsapp),
+          link('E-mail: lucasgilhenriques@gmail.com', `mailto:${site.email}`),
+          link('Instagram: @lucas.henriques_ofilmmaker', site.socials.Instagram),
+          link('Facebook: Lucas Henriques', 'https://www.facebook.com/search/top?q=Lucas%20Henriques'),
+          link('LinkedIn: Lucas Gil Henriques', site.socials.LinkedIn),
+          link('Conversar sobre um projeto', '/contact/'),
+          link('Ver os trabalhos', '/#trabalhos'),
+        ],
+      },
     ],
   },
   '/contact/': {

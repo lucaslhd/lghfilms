@@ -5,9 +5,53 @@ const escape = value => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').r
 const digest = value => 'sha256:' + createHash('sha256').update(value).digest('hex');
 const schema = value => Array.isArray(value) ? { type: 'array', items: value.length ? schema(value[0]) : {} } : value && typeof value === 'object' ? { type: 'object', required: Object.keys(value), properties: Object.fromEntries(Object.entries(value).map(([key, entry]) => [key, schema(entry)])), additionalProperties: false } : { type: typeof value };
 
+import { site } from '../src/site.js';
+
 function renderPage(path, page) {
+  if (path === '/about/') {
+    const storySection = page.sections.find(s => s.heading === 'Minha História') || page.sections[0];
+    const storyHtml = storySection ? `<section class="bio-content">${storySection.paragraphs.map(p => {
+      if (p === 'Fé. Família. Propósito.') {
+        return `<p class="pillars-highlight"><span class="pillar-word">Fé.</span> <span class="pillar-word">Família.</span> <span class="pillar-word">Propósito.</span></p>`;
+      }
+      return `<p>${escape(p)}</p>`;
+    }).join('')}</section>` : '';
+
+    const contactHtml = `<section class="bio-contact" id="contato">
+      <h2>CONTATO</h2>
+      <div class="contact-links-grid">
+        <a class="contact-card" href="${escape(site.whatsapp)}" target="_blank" rel="noopener noreferrer">
+          <span class="contact-label">WhatsApp</span>
+          <span class="contact-value">(11) 9 1511-7067 ↗</span>
+        </a>
+        <a class="contact-card" href="mailto:${escape(site.email)}">
+          <span class="contact-label">E-mail</span>
+          <span class="contact-value">${escape(site.email)} ↗</span>
+        </a>
+        <a class="contact-card" href="${escape(site.socials.Instagram)}" target="_blank" rel="noopener noreferrer">
+          <span class="contact-label">Instagram</span>
+          <span class="contact-value">@lucas.henriques_ofilmmaker ↗</span>
+        </a>
+        <a class="contact-card" href="https://www.facebook.com/search/top?q=Lucas%20Henriques" target="_blank" rel="noopener noreferrer">
+          <span class="contact-label">Facebook</span>
+          <span class="contact-value">Lucas Henriques ↗</span>
+        </a>
+        <a class="contact-card" href="${escape(site.socials.LinkedIn)}" target="_blank" rel="noopener noreferrer">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">Lucas Gil Henriques ↗</span>
+        </a>
+      </div>
+      <div class="bio-actions">
+        <a class="btn-bio-red" href="${origin}/contact/">Conversar sobre um projeto <span>→</span></a>
+        <a class="btn-bio-ghost" href="/#filmes">Ver trabalhos selecionados <span>↗</span></a>
+      </div>
+    </section>`;
+
+    return `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#050505"><title>${escape(page.title)} — Lucas Gil Films</title><meta name="description" content="${escape(page.description)}"><link rel="canonical" href="${origin}${path}"><link rel="alternate" type="text/markdown" href="${markdownPath(path)}"><link rel="describedby" href="/llms.txt"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="stylesheet" href="/agent-pages.css"><meta property="og:type" content="profile"><meta property="og:site_name" content="Lucas Gil Films"><meta property="og:title" content="${escape(page.title)} — Lucas Gil Films"><meta property="og:description" content="${escape(page.description)}"><meta property="og:url" content="${origin}${path}"><meta property="og:image" content="${origin}/og-home-v3.jpg"><script type="application/ld+json">${JSON.stringify(identity()).replaceAll('<', '\\u003c')}</script></head><body class="page-about"><a class="skip-link" href="#conteudo">Pular para o conteúdo</a><header class="site-header-subpage"><a class="wordmark" href="/">lucas gil films<span>.</span></a><nav class="subpage-nav"><a href="/">Início</a><a href="/about/" class="active">Sobre</a><a href="/#filmes">Trabalhos</a><a href="/#servicos">Serviços</a><a href="/contact/">Contato</a></nav><a class="nav-cta-subpage" href="${escape(site.whatsapp)}" target="_blank" rel="noopener">VAMOS CONVERSAR <span>→</span></a></header><main id="conteudo" class="about-main"><div class="bio-intro"><div class="bio-portrait"><img src="/images/lucas-portrait.png" alt="Lucas Gil Henriques" width="160" height="160" loading="eager" decoding="async"></div><div class="bio-headings"><p class="eyebrow">MINHA HISTÓRIA</p><h1>${escape(page.title)}</h1><p class="bio-role">${escape(page.description)}</p></div></div>${storyHtml}${contactHtml}</main><footer><div class="footer-inner"><a class="footer-brand" href="/">LUCAS GIL <b>FILMS</b></a><nav class="footer-nav"><a href="/">Início</a><a href="/about/">Sobre</a><a href="/contact/">Contato</a><a href="/privacy/">Privacidade</a><a href="/#filmes">Trabalhos</a></nav><p>© 2026 Lucas Gil Henriques</p><a class="back-top" href="#conteudo">Voltar ao topo ↑</a></div></footer></body></html>`;
+  }
+
   const content = page.sections.map(section => `<section><h2>${escape(section.heading)}</h2>${(section.paragraphs || []).map(p => `<p>${escape(p)}</p>`).join('')}${section.links?.length ? `<ul>${section.links.map(l => `<li><a href="${escape(l.href)}"${/^https:/.test(l.href) && !l.href.startsWith(origin + '/') ? ' rel="noopener noreferrer"' : ''}>${escape(l.label)}</a></li>`).join('')}</ul>` : ''}</section>`).join('');
-  return `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#171513"><title>${escape(page.title)}</title><meta name="description" content="${escape(page.description)}"><link rel="canonical" href="${origin}${path}"><link rel="alternate" type="text/markdown" href="${markdownPath(path)}"><link rel="describedby" href="/llms.txt"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="stylesheet" href="/agent-pages.css"><meta property="og:type" content="website"><meta property="og:site_name" content="Lucas Gil Films"><meta property="og:title" content="${escape(page.title)}"><meta property="og:description" content="${escape(page.description)}"><meta property="og:url" content="${origin}${path}"><meta property="og:image" content="${origin}/og-home-v3.jpg"><script type="application/ld+json">${JSON.stringify(identity()).replaceAll('<', '\\u003c')}</script></head><body><a class="skip-link" href="#conteudo">Pular para o conteúdo</a><header><a class="wordmark" href="/">lucas gil films<span>.</span></a><a href="/#trabalhos">Ver trabalhos ↗</a></header><main id="conteudo"><p class="eyebrow">LUCAS GIL FILMS</p><h1>${escape(page.title)}</h1>${content}</main><footer><a href="/about/">Sobre</a><a href="/contact/">Contato</a><a href="/privacy/">Privacidade</a><a href="/">Voltar ao portfólio ↑</a></footer></body></html>`;
+  return `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#050505"><title>${escape(page.title)}</title><meta name="description" content="${escape(page.description)}"><link rel="canonical" href="${origin}${path}"><link rel="alternate" type="text/markdown" href="${markdownPath(path)}"><link rel="describedby" href="/llms.txt"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="stylesheet" href="/agent-pages.css"><meta property="og:type" content="website"><meta property="og:site_name" content="Lucas Gil Films"><meta property="og:title" content="${escape(page.title)}"><meta property="og:description" content="${escape(page.description)}"><meta property="og:url" content="${origin}${path}"><meta property="og:image" content="${origin}/og-home-v3.jpg"><script type="application/ld+json">${JSON.stringify(identity()).replaceAll('<', '\\u003c')}</script></head><body><a class="skip-link" href="#conteudo">Pular para o conteúdo</a><header class="site-header-subpage"><a class="wordmark" href="/">lucas gil films<span>.</span></a><nav class="subpage-nav"><a href="/">Início</a><a href="/about/">Sobre</a><a href="/contact/">Contato</a></nav><a class="nav-cta-subpage" href="/#trabalhos">Ver trabalhos ↗</a></header><main id="conteudo"><p class="eyebrow">LUCAS GIL FILMS</p><h1>${escape(page.title)}</h1>${content}</main><footer><div class="footer-inner"><a href="/about/">Sobre</a><a href="/contact/">Contato</a><a href="/privacy/">Privacidade</a><a href="/">Voltar ao portfólio ↑</a></div></footer></body></html>`;
 }
 
 export function agentAssets() {
