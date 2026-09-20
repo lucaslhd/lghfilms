@@ -2,10 +2,12 @@ import { clips, projects, media } from './content.js';
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
 $('#year').textContent=String(new Date().getFullYear());
 const grid=$('.film-grid');
-for(const project of projects){
- const article=document.createElement('article'); article.className='project-card reveal';
- article.innerHTML=`<button class="project-open" data-project="${project.id}" aria-label="Abrir ${project.title}"><div class="project-visual" style="background-image:linear-gradient(0deg,#050505 0%,transparent 55%),url('${media(project.id)}')"><strong>${project.number}</strong><small>PLAY ▶</small></div><div class="project-caption"><div><span>${project.category}</span><h3>${project.title}</h3><p>${project.description}</p></div><span>↗</span></div></button>`;
- grid.append(article);
+if(grid && grid.children.length === 0){
+ for(const project of projects){
+  const article=document.createElement('article'); article.className='project-card reveal';
+  article.innerHTML=`<button class="project-open" data-project="${project.id}" aria-label="Abrir ${project.title}"><div class="project-visual" style="background-image:linear-gradient(0deg,#050505 0%,transparent 55%),url('${media(project.id)}')"><strong>${project.number}</strong><small>PLAY ▶</small></div><div class="project-caption"><div><span>${project.category}</span><h3>${project.title}</h3><p>${project.description}</p></div><span>↗</span></div></button>`;
+  grid.append(article);
+ }
 }
 const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-inview');observer.unobserve(e.target)}}),{threshold:.12});
 $$('.reveal').forEach(el=>observer.observe(el));

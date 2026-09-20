@@ -43,17 +43,24 @@ const icons = {
 const icon = name => `<svg class="social-icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">${icons[name] || ''}</svg>`;
 const socialLinks = () => Object.entries(site.socials).filter(([,href]) => href).map(([name, href]) => `<a href="${href}" target="_blank" rel="noopener noreferrer">${icon(name)}<span>${name}</span></a>`).join('');
 function cards() {
- return projects.map(p => {
-  const double = p.posters.length > 1;
-  const sizes = double ? '(max-width: 700px) 43vw, 25vw' : '(max-width: 700px) 88vw, 42vw';
-  return `<article class="project-card tone-${p.tone}" data-category="${escape(p.category)}">
-   <div class="project-visual ${double ? 'double-frame' : 'single-frame'}">
-    ${p.posters.map(id => `<button class="preview-frame" data-clip-preview="${id}" aria-label="Reproduzir prévia: ${escape(clips[id].title)}" aria-pressed="false"><picture><source type="image/avif" srcset="${media(id,'360.avif')} 360w, ${media(id,'480.avif')} 480w, ${media(id,'720.avif')} 720w" sizes="${sizes}"/><img src="${media(id,'360.webp')}" srcset="${media(id,'360.webp')} 360w, ${media(id,'480.webp')} 480w, ${media(id)} 720w" sizes="${sizes}" width="720" height="1280" loading="lazy" decoding="async" alt=""/></picture><video muted loop playsinline preload="none" tabindex="-1" aria-hidden="true"></video><span class="preview-badge" aria-hidden="true">▷ <span>Prévia</span></span></button>`).join('')}
-    <span class="project-count">${p.clips.length === 1 ? '1 filme' : p.clips.length + ' filmes'}</span>
-   </div>
-   <button class="project-open" data-project="${p.id}"><span class="project-caption"><span>${p.label}</span><span>${p.number} /</span><span class="project-title">${p.title}</span></span><span class="project-watch">Assistir ${p.clips.length > 1 ? 'à seleção' : 'ao filme'} <span aria-hidden="true">↗</span></span></button>
-  </article>`;
- }).join('\n');
+ return projects.map(p => `
+  <article class="project-card reveal">
+   <button class="project-open" data-project="${p.id}" aria-label="Abrir ${escape(p.title)}">
+    <div class="project-visual" style="background-image:linear-gradient(0deg,#050505 0%,transparent 55%),url('${media(p.id)}')">
+     <strong>${p.number}</strong>
+     <small>PLAY ▶</small>
+    </div>
+    <div class="project-caption">
+     <div>
+      <span>${escape(p.category)}</span>
+      <h3>${escape(p.title)}</h3>
+      <p>${escape(p.description)}</p>
+     </div>
+     <span>↗</span>
+    </div>
+   </button>
+  </article>
+ `).join('\n');
 }
 export default defineConfig({
  plugins: [{ name: 'portfolio-static-content', transformIndexHtml(html, context) {
