@@ -3,9 +3,9 @@ export const clips = Object.fromEntries(['01','02','04','05','06','08'].map(n=>[
 const themes=[
  ['01','AUTOMOTIVO','DETALHES QUE ACELERAM','Design, performance e presença em cada frame.'],
  ['02','AUTOMOTIVO','LUXO EM CADA DETALHE','Acabamento, tecnologia e experiência traduzidos em imagem.'],
- ['04','ODONTOLOGIA','PRECISÃO QUE TRANSFORMA','Tecnologia, cuidado e confiança em uma narrativa visual precisa.'],
+ ['04','AUTOMOTIVO','BRABUS 800 WIDESTAR','Exclusividade, customização artesanal e presença marcante em cada detalhe.'],
  ['05','ODONTOLOGIA','CONFIANÇA EM CADA SORRISO','Pessoas, atendimento e transformação apresentados com autenticidade.'],
- ['06','EVENTO & ARTE','IDEIAS EM MOVIMENTO','Cultura, criatividade e experiência transformadas em filme.'],
+ ['06','EVENTO & BRANDING','PRÊMIO ABC 2025','Cobertura audiovisual, prestígio e celebração das maiores mentes da comunicação.'],
  ['08','AUTOMOTIVO','FORÇA EM CADA DETALHE','Chevrolet, identidade e movimento em uma estética cinematográfica.']
 ];
 export const projects=themes.map((t,i)=>({id:`film${t[0]}`,number:String(i+1).padStart(2,'0'),category:t[1],label:t[1],title:t[2],description:t[3],posters:[`film${t[0]}`],clips:[`film${t[0]}`],tone:'red'}));
