@@ -1,8 +1,8 @@
 // Lucas Gil Films V2 — seis filmes novos aprovados.
 export const clips = Object.fromEntries(['01','02','04','05','06','08'].map(n=>[`film${n}`,{title:`Film ${n}`,duration:'—'}]));
 const themes=[
- ['01','AUTOMOTIVO','DETALHES QUE ACELERAM','Design, performance e presença em cada frame.'],
- ['02','AUTOMOTIVO','LUXO EM CADA DETALHE','Acabamento, tecnologia e experiência traduzidos em imagem.'],
+ ['01','AUTOMOTIVO','MERCEDES-BENZ COUPE','Direção, sofisticação e narrativa cinematográfica em cada detalhe.'],
+ ['02','AUTOMOTIVO','AUDI Q8 BLACK EDITION','Design imponente, tecnologia e excelência traduzidos em imagem.'],
  ['04','AUTOMOTIVO','BRABUS 800 WIDESTAR','Exclusividade, customização artesanal e presença marcante em cada detalhe.'],
  ['05','ODONTOLOGIA','CONFIANÇA EM CADA SORRISO','Pessoas, atendimento e transformação apresentados com autenticidade.'],
  ['06','EVENTO & BRANDING','PRÊMIO ABC 2025','Cobertura audiovisual, prestígio e celebração das maiores mentes da comunicação.'],
